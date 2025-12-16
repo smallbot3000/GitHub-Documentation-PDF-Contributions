@@ -1,0 +1,212 @@
+\section{About GitHub Documentation}\label{sec:about_docs}\
+At GitHub, we strive to create documentation that is accurate, valuable, inclusive, accessible, and easy to use.
+Before contributing to GitHub Docs, please take a moment to familiarize yourself with GitHub's documentation philosophy, fundamentals, and content design principles, given in Sub-Sections.
+\subsection{GitHub's Documentation Philosophy}\label{subsec:doc_ply}
+Our documentation philosophy guides what content we create and how we create it.
+As the home to the world's largest community of developers, we want to make sure that our documentation is accurate,
+valuable, inclusive, and easy to use.
+Our documentation philosophy leads us toward these goals.
+
+\begin{enumerate}
+    \item We advocate for our users.
+    This can occur at any point in the documentation process, from planning to writing to publishing.
+    We respond to feedback and proactively work to create the best user experience possible on the GitHub site.
+    \item We write for an international audience, so that our content can be translated and is inclusive of all people.
+    \item We create content that can be accessed by a broad group of users.
+    Our content toolkit includes resources and guidance to reduce barriers for people with disabilities, and we
+    prioritize keeping up to date with the latest accessibility standards.
+    \item We create task-based content.
+    We consider what people are trying to accomplish when they use GitHub, and then we create content that helps
+    them achieve their goals and discover new possibilities.
+    \item We collaborate with teams across GitHub and the open source community to create high-quality content.
+    \item We continually learn and improve to curate the best experience for people using GitHub.
+\end{enumerate}
+%We may want examples of each or most of these points
+
+\subsection{GitHub's Documentation Fundamentals}\label{subsec:doc_fundm}
+All content published must meet a small number of fundamental requirements.
+Use the lists below to help ensure your contributions are accurate, accessible and inclusive, and consistent.
+\begin{enumerate}
+    \item \textbf{Accurate}: Documentation must be correct and accurate.
+    Ensure that the content is free from factual, spelling, and formatting errors.
+    \item Documentation is up to date with the latest accessibility standards, and is written to be inclusive and
+    translation-friendly.
+    \begin{enumerate}
+        \item Ensure content adheres to the accessibility and screenshot guidelines.
+        For more information, see \href{https://docs.github.com/en/contributing/writing-for-github-docs/creating-screenshots}{Creating screenshots}, or in Appendix~\ref{ch:create_ss}, page~\pageref{ch:create_ss}.
+        \item Ensure content can be successfully translated.
+        For more information, see \href{https://docs.github.com/en/contributing/writing-for-github-docs/writing-content-to-be-translated}{Writing content to be translated}, orin Appendix~\ref{ch:translatable}, page~\pageref{ch:translatable}.
+    \end{enumerate}
+    \item \textbf{Consistent}: Documentation must maintain a consistent voice, tone, and style throughout, creating
+    a cohesive experience for readers.
+    \begin{enumerate}
+        \item Ensure content adheres to the GitHub Docs style guide.
+        For more information, see Style guide.
+        \item Apply consistent terminology and naming conventions.
+        \item Use branding elements (for example, product and feature names, logos, color schemes) consistently in
+        the content.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Content Design Principles}\label{subsec:content_design}
+We create product documentation that helps, teaches, and engages everyone who uses GitHub.
+One step of this work is designing the content that we write.
+We follow these principles when designing and planning content.
+
+\begin{enumerate}
+    \item Our content is user-centered and inclusive.
+    We respect everyone who visits the docs and make content that works for them with our strategy, design, and style
+    choices.
+    \item Our content explains why our products are useful and helps people achieve their goals and priorities.
+    \item We spend our resources creating high-quality, valuable documentation for GitHub’s community.
+    \item We create just enough docs - more content makes everything more difficult to find, and anything added dilutes
+    everything else (GitHub Zen).
+    \item We iterate and ship to learn - as we learn more from experience, industry expertise, and working with our
+    GitHub Docs community, we adjust our processes, practices, and guidelines.
+\end{enumerate}
+
+This content should also be designed provide a style guide and content models as building blocks and guidelines for
+anyone to design and create documentation.
+
+\begin{enumerate}
+    \item Our style guide and content models apply to a range of scenarios.
+    \item Decisions are based on what is best for people using our docs, not simply what is right or wrong according to
+    grammar or style rules.
+    We are flexible and open to change while maintaining consistency.
+    \item We focus our attention on documenting high-impact, high-value scenarios rather than attempting to
+    comprehensively cover every possible use case for the many GitHub products and features.
+    \item Our highest priorities are clarity, meaning, correctness, and consistency.
+    \item When making a style or structure decision, we consider what people are trying to do with the information and
+    how our content can best support their goals.
+    \item When a question specific to documentation is not covered by the style guide or content model, we evaluate it
+    using these principles, then make a decision.
+\end{enumerate}
+
+\section{Best Practices for Writing GitHub Documentation}\label{sec:best_prac}
+Whether you're creating a new article or updating an existing one, you should follow these guidelines given in the
+Sub-Section below.
+\subsection{Align Content to User Needs}\label{subsec:align_user}
+Before you begin, it’s important to understand who you’re writing for, what their goals are, the core tasks or
+concepts that the article will address, and what type of content to write.
+
+In terms of defining the audience, the author must consider who will be reading the article, and what the reader is
+trying to do with the information.
+
+When defining the core purpose of the article, the author must answer a small number of questions.
+Firstly, what should someone be able to do or understand after reading this article?
+Choose one or two tasks or concepts that the content will discuss.
+In addition, if there are additional tasks, concepts, or information that are not essential, consider if they can be
+placed lower in the article, moved to another article, or omitted completely.
+
+After defining the audience and cor purpose of the article, the author must also determine the type of content that
+is presented in the article that they are writing.
+These are given in the list below.
+\begin{enumerate}
+    \item Conceptual Content: Conceptual content helps people understand a feature or topic by providing a clear,
+    high-level overview, explanation of how the feature or topic can help them on their journey, and context like
+    use cases or examples.
+    \item Referral Content: Referral Content is content that provides detailed information that people need while they
+    are actively using a feature.
+    Some major subjects may require their own referential article, especially if there
+    is a large amount of referential content, such as for search syntax or YAML syntax in GitHub Actions.
+    For smaller amounts of content or more specific information, like a list of a feature’s supported languages or
+    hardware requirements, use referential sections in context within procedural or conceptual articles.
+    \item Procedural Content: Procedural content gives context on how a task fits into someone's larger goal.
+     This content helps people complete a task from start to finish while they are using GitHub.
+     This content is also written as sections within larger articles.
+    \item Troubleshooting Content: Troubleshooting content includes built-in errors we expect people to encounter,
+    common problems reported to support, and situations people might encounter while completing tasks.
+    Use troubleshooting sections in guides or procedural articles to keep solutions close to procedures.
+    Work with support and product managers to surface common errors and include them in the documentation.
+    \item Quickstart Content: Quickstarts enable people to quickly complete a discrete, focused task by illustrating
+    a workflow with only essential steps, in about five minutes or 600 words.
+    Quickstarts can be used for quickly getting set up with a new tool, or for quickly completing another task.
+    For more complex tasks, use a tutorial.
+    \item Tutorial Content: Tutorials are useful when someone has a basic understanding of the product and is
+    interested in extending their understanding to solve a specific problem
+\end{enumerate}
+
+\section{Structure Content for Readability}\label{sec:struct_read}
+Use the following best practices to structure the content.
+When adding content to an existing article, follow the existing structure whenever possible.
+
+\begin{enumerate}
+    \item Provide initial context.
+    Define the topic and state its relevance to the reader.
+    \item Structure the content in a logical order by importance and relevance.
+    Place information in order of
+    priority, and in the order users will need it.
+    \item Avoid long sentences and paragraphs.
+    \begin{enumerate}
+        \item Introduce concepts one by one.
+        \item Use one idea per paragraph.
+        \item Use one idea per sentence.
+    \end{enumerate}
+    \item Emphasize the most important information.
+    \begin{itemize}
+        \item Begin each sentence or paragraph with the most important words and takeaways.
+        \item When explaining a concept, start with the conclusion, then explain it in more detail.
+        (This is sometimes called an "inverted pyramid.")
+        \item When explaining a complex topic, present readers with the basic information first, and disclose the
+        details later in the article.
+    \end{itemize}
+    \item Use meaningful subheadings.
+    Organize related paragraphs into sections.
+    Give each section a subheading that is unique and that accurately describes the content.
+    \item Consider using in-page links for longer content.
+    This allows readers to jump to areas of interest and skip
+    content that is irrelevant to them.
+\end{enumerate}
+
+\section{Write for Readability}\label{sec:readability}
+
+The author must make it easy for busy users to read and understand the text.
+To do so, follow the best practices below.
+
+\begin{itemize}
+    \item Use plain language.
+    Use common, everyday words, and avoid jargon when possible.
+    Terms that are well known to
+    developers are fine, but don't assume that the reader knows the details of how GitHub works.
+    \item Use active voice.
+    \item Be concise.
+    \begin{itemize}
+        \item Write sentences that are simple and brief.
+        \item Avoid complex sentences that contain multiple concepts.
+        \item Pare down unnecessary details.
+    \end{itemize}
+\end{itemize}
+For related information, see "Voice and tone" in \href{https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide#voice-and-tone}{Style guide} and
+\href{https://docs.github.com/en/contributing/writing-for-github-docs/writing-content-to-be-translated}{Writing content to be translated} in Appendix~\ref{ch:translatable}.
+
+\section{Format for Scalability}\label{sec:scanability}
+
+Most readers don't consume articles in their entirety.
+Instead, they either \textit{scan} the page to locate specific
+information, or \textit{skim} the page to get a general idea of the concepts.
+
+When scanning or skimming content, readers skip over large chunks of text.
+They look for elements that are related to their task or that stand out on the page, such as headings, alerts,
+lists, tables, code blocks, visuals, and the first few words in each section.
+
+Once the article has a clearly defined purpose and structure, you can apply the following formatting techniques to
+optimize the content for scanning and skimming.
+These techniques can also help to make content more understandable for all readers.
+
+\begin{itemize}
+    \item Use text highlighting such as boldface and hyperlinks to call attention to the most important points. Use text
+    highlighting sparingly.
+    Do not highlight more than $10\%$ of the total text in an article.
+    \item Use formatting elements to separate the content and create space on the page.
+    For example:
+    \begin{itemize}
+        \item Bulleted and numbered lists (with optional run-in subheads)
+        \item Numbered lists
+        \item \href{https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide#alerts}{Alerts}
+        \item Tables
+        \item Visuals
+        \item Code blocks and code annotations
+    \end{itemize}
+\end{itemize}
+
+

@@ -1,0 +1,30 @@
+\documentclass[11pt]{book}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage{authblk}
+\usepackage{verbatim}
+
+\title{GitHub Copilot Documentation: PDF Version}
+
+\author[1]{Jacob Small}
+\affil[1]{smallbot3000}
+\date{\today}
+
+\begin{document}
+    \frontmatter
+    \maketitle
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \mainmatter
+    \appendix
+    \chapter[Documentation Best Practices]{Best practices for GitHub Documentation}\label{ch:best_practices}
+    \input{Appendixes/gh_best_practices}
+    \chapter{Creating Screenshots}\label{ch:create_ss}\input{Appendixes/adding_screenshots}
+    \chapter{Writing Translatable Content}\label{ch:translatable}\input{Appendixes/translation}
+
+\end{document}

@@ -1,0 +1,180 @@
+\section{About Screenshots in GitHub Documentation}\label{sec:abt_ss_docu}
+You can help users locate elements of the user interface that are difficult to find by adding screenshots to GitHub
+documentation.
+There are positives and negatives to adding a screenshot.
+Screenshots make articles more visually scannable and make instructions easier to understand, especially for people
+who have difficulty reading.
+When supplied with alt text, screenshots help blind and low-vision users collaborate with sighted colleagues.
+
+On the other hand, screenshots privilege sighted users, add length and load time to articles, and increase the
+volume of content that needs to be maintained.
+When captured at different pixel dimensions and degrees of zoom than the reader is using, screenshots can be confusing.
+Therefore, we only add screenshots to GitHub Docs when they meet our criteria for inclusion.
+
+\section{Criteria for Including a Screenshot}\label{sec:ss_inc_crit}
+Use a screenshot to complement text instructions when an element of the user interface (UI) is hard to find, such as
+in the following cases:
+
+\begin{enumerate}
+    \item The element is small or visually subtle: For example, Figure~\ref{fig:ss_yes_ui_small} displays an image
+    of an instance where The edit button for a repository's social media preview image is small and visually
+    unobtrusive.
+    It may be hard to find among the other repository settings.
+    \item The element is not immediately visible.
+    For example, the element is contained in a drop-down menu.
+    This can be seen in Figure~\ref{fig:ss_yes_hidden_ui}, where the options to clone a gist are contained under a
+    dropdown menu labeled "Embed."
+
+    \item The interface has multiple competing choices that can cause confusion.
+    As seen in Figure~\ref{fig:ss_multi_choice}, There are three elements that could be interpreted as "settings" on the main page for a
+    repository: the "Settings" tab, the gear icon in the "About" section of the right sidebar, and the account
+    settings accessed via the profile picture.
+\end{enumerate}
+
+%Do not use screenshots for procedural steps where text alone is clear, or to show code commands or outputs.
+% do we want this? idk if it would be helpful?
+\begin{figure}
+    \centering
+    \caption{A UI element that may be hard to find without visual aid}
+    \label{fig:ss_yes_ui_small}
+    \includegraphics[width=0.75\textwidth]{Appendixes/Figures/screenshot-yes-ui-small}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \caption{A UI element that is hidden until interacted with}
+    \label{fig:ss_yes_hidden_ui}
+    \includegraphics[width=0.75\textwidth]{Appendixes/Figures/screenshot-yes-ui-hidden}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \caption{A UI has Multiple Competing Choices}
+    \label{fig:ss_multi_choice}
+    \includegraphics[width=1\textwidth]{Appendixes/Figures/screenshot-yes-ui-multi-choice}
+\end{figure}
+
+\section{Violations of Screenshot Inclusion Criteria}\label{sec:ss_no_follow_crit}
+The following screenshots do not meet our criteria for inclusion, as seen in the list below.
+\begin{enumerate}
+    \item The UI element is easy to find: The "Create repository" button is visually prominent through size, color,
+    and placement.
+    There are few competing choices.
+    This is seen in Figure~\ref{fig:ss_no_ui_easy}, where Text instructions are adequate to help the user complete
+    the step.
+    \item The UI has few, straightforward choices: It is simple and straightforward options, such as selecting or
+    deselecting a checkbox, do not need a visual support.
+    As seen in Figure~\ref{fig:ui_no_strfwd_choice}, Text instructions are adequate to help the user complete the step.
+    However, There are also two accessibility implications of including the full sentence of text below the checkbox in
+    the screenshot, as listed below:
+    \begin{enumerate}
+        \item The sentence is hard to read for low-sighted users, because it's small and not as crisp as HTML text.
+        \item A person using a screen reader won't have access to the information, because it will not fit within
+        alt text character limits.
+        Including the text in the instructions would remedy this, but would be unnecessarily wordy.
+    \end{enumerate}
+\end{enumerate}
+
+\begin{figure}
+    \centering
+    \caption{An easy-to-find UI element}
+    \label{fig:ss_no_ui_easy}
+    \includegraphics[width=1\textwidth]{Appendixes/Figures/screenshot-no-ui-easy-to-find}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \caption{UI with straightforward choices}
+    \label{fig:ui_no_strfwd_choice}
+    \includegraphics[width=1\textwidth]{Appendixes/Figures/screenshot-no-ui-obv}
+\end{figure}
+
+\section{Requirements For Screenshots}\label{sec:ss_reqs}
+In addition to the criteria for inclusion given in Section~\ref{sec:ss_inc_crit} and examples of violations of said
+criteria in Section~\ref{sec:ss_no_follow_crit}, all screenshots must meet the following requirements as given below.
+
+\subsection{Technical Specifications}\label{subsec:ss_tech_specs}
+Images and photos should be given in a PNG file format, and are static images only (no GIFs).
+These immages should be $144$ dpi (Dots per inch), $750$–$1000$ pixels wide for full-column images with a file size
+of $250\text{KB}$ or less.
+In addition, images must have descriptive file names, such as \verb|gist-embed-link.png| instead of \verb|right_side_page_03.png|\@.
+
+Images captured on the macOS system must be retina images.
+In Snagit and similar pieces of software, select Snagit $\to$ Preferences $\to$ Advanced and deselect "Scale down retina images
+when sharing"
+
+\subsection{Accessibility Requirements}\label{subsec:ss_access_reqs}
+To meet the needs of more users, screenshots must obey the items outlined in the list below.
+
+\begin{enumerate}
+    \item Be accompanied by complete instructions in the procedural step, with no information conveyed entirely in
+    visual form.
+    \item Be full contrast, as in the interface itself, with nothing obscured or reduced in opacity or color contrast.
+    \item Have alt text that describes the content of the image and the appearance of its highlighting, if any.
+    For more information, see \href{https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide#alt-text}{Style guide}.
+    \item Be clear and crisp, with text and UI elements as legible as possible.
+\end{enumerate}
+
+\subsection{Visual Style}\label{subsec:vis_sty}
+
+\begin{enumerate}
+    \item Show a UI element with just enough surrounding context to help people know where to find the element on
+    their screen.
+    \item Reduce negative space by resizing your browser window until optimal.
+    \item Show interfaces in light theme wherever possible.
+    \begin{enumerate}
+        \item For GitHub, select "Light default" in your appearance settings.
+        For more information, see \href{https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/managing-your-theme-settings}{Managing your theme settings}.
+        \item For VSCode, select "GitHub light default" in the free \href{https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme}{GitHub Theme} extension.
+        \item If the software you need to screenshot is available in dark mode only, it's fine to use dark mode.
+    \end{enumerate}
+    \item If your username and avatar appear, replace them with \@ octocat's username and \href{https://avatars.githubusercontent.com/u/583231?v=4}{avatar}\@.
+     Use the developer tools in your browser to replace your username with\@ octocat and to replace the URL of your
+    avatar with \href{https://avatars.githubusercontent.com/u/583231?v=4}{octocat}.
+    \item Do not include a cursor in the image.
+\end{enumerate}
+
+\subsubsection{Drop-Down Menus}\label{subsubsec:ss_dd_menus}
+In many cases, there are two primary goals for showing a screenshot of a drop-down menu.
+If the primary goal in showing a dropdown menu is to help the reader locate the menu itself, show the menu closed,
+as seen in Figure~\ref{fig:ss_closed_dd} below.
+\begin{figure}
+    \centering
+    \caption{Example of a closed dropdown menu}
+    \label{fig:ss_closed_dd}
+    \includegraphics{Appendixes/Figures/screenshot-closed-dd}
+\end{figure}
+
+If the primary goal in showing a dropdown menu is to help the reader distinguish among options within the menu, show
+the menu open, as shown in Figure~\ref{fig:ss_open_dd}.
+Capture open menus without focus (cursor or hover state).
+Showing menu items with a white background ensures contrast with the dark orange outline, where present.
+
+\begin{figure}
+    \centering
+    \caption{Example of a open dropdown menu}
+    \label{fig:ss_open_dd}
+    \includegraphics{Appendixes/Figures/screenshot-open-dd}
+\end{figure}
+
+\subsubsection{Highlighting in Screenshots}\label{subsubsec:hl_ss}
+
+To highlight a specific UI element in a screenshot such as Figure~\ref{fig:ss_hl}, use our special theme for
+\href{https://www.techsmith.com/snagit/}{Snagit} to apply a contrasting stroke around the element.
+
+The stroke is the color \verb|fg.severe| in the
+\href{https://primer.style/design/}{Primer Design System} (HEX #BC4C00 or RGB 188, 76, 0).
+This dark orange has good color contrast on both white and black.
+To check contrast on other background colors, use the
+\href{https://www.tpgi.com/color-contrast-checker/}{Color Contrast Analyzer}.
+\begin{figure}
+    \centering
+    \caption{Example of highlighting in a screenshot}
+    \label{fig:ss_hl}
+    \includegraphics{Appendixes/Figures/screenshot-hl}
+\end{figure}
+
+
+
+
+
