@@ -1,0 +1,83 @@
+In addition to the criteria for inclusion given in Section~\ref{sec:ss_inc_crit} and examples of violations of said
+criteria in Section~\ref{sec:ss_no_follow_crit}, all screenshots must meet the following requirements as given below.
+
+\subsection{Technical Specifications}\label{subsec:ss_tech_specs}
+Images and photos should be given in a PNG file format, and are static images only (no GIFs).
+These immages should be $144$ dpi (Dots per inch), $750$–$1000$ pixels wide for full-column images with a file size
+of $250\text{KB}$ or less.
+In addition, images must have descriptive file names, such as \verb|gist-embed-link.png| instead of \verb|right_side_page_03.png|\@.
+
+Images captured on the macOS system must be retina images.
+In Snagit and similar pieces of software, select Snagit $\to$ Preferences $\to$ Advanced and deselect \enquote{Scale down retina images
+when sharing}
+
+\subsection{Accessibility Requirements}\label{subsec:ss_access_reqs}
+To meet the needs of more users, screenshots must obey the items outlined in the list below.
+
+\begin{enumerate}
+    \item Be accompanied by complete instructions in the procedural step, with no information conveyed entirely in
+    visual form.
+    \item Be full contrast, as in the interface itself, with nothing obscured or reduced in opacity or color contrast.
+    \item Have alt text that describes the content of the image and the appearance of its highlighting, if any.
+    For more information, see \href{https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide#alt-text}{Style guide}.
+    \item Be clear and crisp, with text and UI elements as legible as possible.
+\end{enumerate}
+
+\subsection{Visual Style}\label{subsec:vis_sty}
+
+\begin{enumerate}
+    \item Show a UI element with just enough surrounding context to help people know where to find the element on
+    their screen.
+    \item Reduce negative space by resizing your browser window until optimal.
+    \item Show interfaces in light theme wherever possible.
+    \begin{enumerate}
+        \item For GitHub, select \enquote{Light default}  in your appearance settings.
+        For more information, see \href{https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/managing-your-theme-settings}{Managing your theme settings}.
+        \item For VSCode, select \enquote{GitHub light default}  in the free \href{https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme}{GitHub Theme} extension.
+        \item If the software you need to screenshot is available in dark mode only, it's fine to use dark mode.
+    \end{enumerate}
+    \item If your username and avatar appear, replace them with \@ octocat's username and \href{https://avatars.githubusercontent.com/u/583231?v=4}{avatar}\@.
+     Use the developer tools in your browser to replace your username with\@ octocat and to replace the URL of your
+    avatar with \href{https://avatars.githubusercontent.com/u/583231?v=4}{octocat}.
+    \item Do not include a cursor in the image.
+\end{enumerate}
+
+\subsubsection{Drop-Down Menus}\label{subsubsec:ss_dd_menus}
+In many cases, there are two primary goals for showing a screenshot of a drop-down menu.
+If the primary goal in showing a dropdown menu is to help the reader locate the menu itself, show the menu closed,
+as seen in Figure~\ref{fig:ss_closed_dd} below.
+\begin{figure}
+    \centering
+    \caption{Example of a closed dropdown menu}
+    \label{fig:ss_closed_dd}
+    \includegraphics{Chapters/Figures/screenshot-closed-dd}
+\end{figure}
+
+If the primary goal in showing a dropdown menu is to help the reader distinguish among options within the menu, show
+the menu open, as shown in Figure~\ref{fig:ss_open_dd}.
+Capture open menus without focus (cursor or hover state).
+Showing menu items with a white background ensures contrast with the dark orange outline, where present.
+
+\begin{figure}
+    \centering
+    \caption{Example of an open dropdown menu}
+    \label{fig:ss_open_dd}
+    \includegraphics{Chapters/Figures/screenshot-open-dd}
+\end{figure}
+
+\subsubsection{Highlighting in Screenshots}\label{subsubsec:hl_ss}
+
+To highlight a specific UI element in a screenshot such as Figure~\ref{fig:ss_hl}, use our special theme for
+\href{https://www.techsmith.com/snagit/}{Snagit} to apply a contrasting stroke around the element.
+
+The stroke is the color \verb|fg.severe| in the
+\href{https://primer.style/design/}{Primer Design System} (HEX #BC4C00 or RGB 188, 76, 0).
+This dark orange has good color contrast on both white and black.
+To check contrast on other background colors, use the
+\href{https://www.tpgi.com/color-contrast-checker/}{Color Contrast Analyzer}.
+\begin{figure}
+    \centering
+    \caption{Example of highlighting in a screenshot}
+    \label{fig:ss_hl}
+    \includegraphics{Chapters/Figures/screenshot-hl}
+\end{figure}

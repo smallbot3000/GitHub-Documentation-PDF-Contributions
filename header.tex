@@ -7,6 +7,8 @@
 \usepackage{appendix}
 \usepackage{authblk}
 \usepackage{verbatim}
+\usepackage[backend=biber, style=apa, sorting=nty]{biblatex}
+\usepackage{csquotes}
 
 \title{GitHub Copilot Documentation: PDF Version}
 
@@ -21,10 +23,9 @@
     \listoffigures
     \listoftables
     \mainmatter
-    \appendix
     \chapter[Documentation Best Practices]{Best practices for GitHub Documentation}\label{ch:best_practices}
-    \input{Appendixes/gh_best_practices}
-    \chapter{Creating Screenshots}\label{ch:create_ss}\input{Appendixes/adding_screenshots}
-    \chapter{Writing Translatable Content}\label{ch:translatable}\input{Appendixes/translation}
-
+    \input{Chapters/gh_best_practices}
+    \chapter{Creating Screenshots}\label{ch:create_ss}\input{Chapters/adding_screenshots}
+    \chapter{Writing Translatable Content}\label{ch:translatable}\input{Chapters/translation}
+    \appendix
 \end{document}
